@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RobotClass" load_steps=3 format=3 uid="uid://g4h5i6j7k8l9"]
+
+[ext_resource type="Script" path="res://scripts/resources/robot_class.gd" id="1_script"]
+[ext_resource type="PackedScene" uid="uid://f3g4h5i6j7k8" path="res://scenes/skills/ground_slam.tscn" id="2_skill"]
+
+[resource]
+script = ExtResource("1_script")
+robot_name = "Juggernaut"
+base_health = 200
+movement_speed = 4.0
+starting_skill_scene = ExtResource("2_skill")

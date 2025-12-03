@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\engine\game_loop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\engine\renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\engine\vulkan_renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\game\character.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\game\enemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\game\item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\game\item_drop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\game\level.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\game\visual_effect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\ui\ui_system.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\ui\character_select.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\ui\inventory_ui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\engine\game_loop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\engine\renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\engine\vulkan_renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\engine\vertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\game\character.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\game\enemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\game\item.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\game\item_drop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\game\level.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\game\visual_effect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\ui\ui_system.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\ui\inventory_ui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\src\ui\character_select.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Source\TheyLanded\ActionRPG-In_Progress-\ActionRPG(In_Progress)\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{CFE28CCD-A62F-397C-BCCE-30D93A424756}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FB5696CB-384C-3130-9461-7FAA54100035}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

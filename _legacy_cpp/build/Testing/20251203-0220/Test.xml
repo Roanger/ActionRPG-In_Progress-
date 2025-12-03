@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20251203-0220-Experimental"
+	Name="(empty)"
+	Generator="ctest-4.2.0"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="Shaggs-Windows"
+	OSRelease="10.0.26200"
+	OSVersion="Windows 10"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="15"
+	ModelID="8"
+	ModelName="AMD Ryzen 5 8500G w/ Radeon 740M Graphics"
+	ProcessorCacheSize="64"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="43996"
+	TotalPhysicalMemory="31708"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="3551"
+	>
+	<Testing>
+		<StartDateTime>Dec 03 10:20 Taipei Standard Time</StartDateTime>
+		<StartTestTime>1764728410</StartTestTime>
+		<TestList/>
+		<EndDateTime>Dec 03 10:20 Taipei Standard Time</EndDateTime>
+		<EndTestTime>1764728410</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
