@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "C:/Source/TheyLanded/ActionRPG-In_Progress-/ActionRPG(In_Progress)"
+    "cmake.sourceDirectory": "C:/Source/TheyLanded/ActionRPG-In_Progress-/ActionRPG(In_Progress)",
+    "cmake.ignoreCMakeListsMissing": true
 }

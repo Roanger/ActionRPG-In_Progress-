@@ -10,6 +10,12 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var max_health = 100
 var current_health = 100
 
+# Total stats (Base + Equipment)
+var max_health_total: float = 100.0
+var damage_total: float = 10.0
+var output_bonus: float = 0.0 # From equipment
+var speed_total: float = 5.0
+
 signal health_changed(current, max)
 
 @onready var nav_agent = $NavigationAgent3D
@@ -24,6 +30,45 @@ func _ready():
 		# Apply Class Stats
 		max_health = current_class.base_health
 		current_health = max_health
+	
+	if has_node("Inventory"):
+		var inv = get_node("Inventory")
+		inv.equipment_changed.connect(_on_equipment_changed)
+	
+	recalculate_stats()
+
+func _on_equipment_changed(equipment: Dictionary):
+	recalculate_stats()
+
+func recalculate_stats():
+	# 1. Reset to Base
+	max_health_total = max_health
+	damage_total = 0 # Base damage?
+	speed_total = SPEED
+	if current_class:
+		speed_total = current_class.movement_speed
+		# Assuming class has base damage somewhere? Currently it's projectile damage.
+		# Let's say Player has base output:
+		damage_total = 10.0
+	
+	# 2. Add Equipment
+	if has_node("Inventory"):
+		var inv = get_node("Inventory")
+		for slot in inv.equipment.keys():
+			var item = inv.equipment[slot]
+			if item:
+				if item.stats.has("structure"):
+					max_health_total += item.stats["structure"]
+				if item.stats.has("output"):
+					damage_total += item.stats["output"]
+				if item.stats.has("velocity"):
+					speed_total += item.stats["velocity"]
+	
+	# 3. Handle Health Ratio?
+	# If max health increases, do we heal the player? 
+	# Usually we keep the ratio or just increase max.
+	health_changed.emit(current_health, max_health_total)
+	print("Stats Updated: HP=", max_health_total, " Dmg=", damage_total, " Spd=", speed_total)
 
 var hidden_walls = {} # Dictionary of hidden walls
 
@@ -137,6 +182,13 @@ func shoot():
 	get_parent().add_child(projectile)
 	projectile.global_position = global_position + Vector3(0, 1, 0) - mesh.global_transform.basis.z * 1.0
 	projectile.global_rotation = mesh.global_rotation
+	
+	# Pass damage stats
+	if "damage" in projectile:
+		projectile.damage = damage_total
+	# Pass shooter
+	if "shooter" in projectile:
+		projectile.shooter = self
 
 func set_click_target():
 	var mouse_pos = get_viewport().get_mouse_position()

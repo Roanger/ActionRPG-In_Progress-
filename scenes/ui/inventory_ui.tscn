@@ -1,0 +1,85 @@
+[gd_scene load_steps=2 format=3 uid="uid://invui1234567"]
+
+[ext_resource type="Script" path="res://scripts/ui/inventory_ui.gd" id="1_script"]
+
+[node name="InventoryUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 50.0
+offset_top = -300.0
+offset_right = 750.0
+offset_bottom = 300.0
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -38.5
+offset_top = 10.0
+offset_right = 38.5
+offset_bottom = 33.0
+grow_horizontal = 2
+text = "INVENTORY"
+horizontal_alignment = 1
+
+[node name="GridLabel" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -350.0
+offset_top = 40.0
+offset_right = -50.0
+offset_bottom = 63.0
+grow_horizontal = 0
+text = "BACKPACK"
+horizontal_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -430.0
+offset_top = -180.0
+offset_right = -30.0
+offset_bottom = 180.0
+grow_horizontal = 0
+grow_vertical = 2
+columns = 8
+
+[node name="EquipLabel" type="Label" parent="Panel"]
+layout_mode = 1
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 240.0
+offset_bottom = 63.0
+text = "EQUIPMENT"
+horizontal_alignment = 1
+
+[node name="EquipContainer" type="GridContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -180.0
+offset_right = 240.0
+offset_bottom = 180.0
+grow_vertical = 2
+columns = 2

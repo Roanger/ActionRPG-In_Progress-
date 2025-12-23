@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Equipment" load_steps=2 format=3 uid="uid://itemplating1"]
+
+[ext_resource type="Script" path="res://scripts/resources/equipment.gd" id="1_equip"]
+
+[resource]
+script = ExtResource("1_equip")
+slot = 1
+stats = {
+"structure": 20,
+"armor": 2
+}
+level_requirement = 1
+id = "basic_plating"
+name = "Basic Plating"
+description = "Simple steel sheets bolted to the frame. Increases Structure."
+rarity = 1
+max_stack = 1
+sell_value = 20

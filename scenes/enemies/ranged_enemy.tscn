@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://rangedenemy1234"]
+
+[ext_resource type="Script" path="res://scripts/enemies/enemy_ranged.gd" id="1_script"]
+[ext_resource type="PackedScene" uid="uid://c5d6e7f8g9h0" path="res://scenes/projectile.tscn" id="2_proj"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1"]
+height = 2.0
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_1"]
+radius = 0.4
+height = 1.8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_Blue"]
+albedo_color = Color(0, 0.5, 1, 1)
+
+[node name="RangedEnemy" type="CharacterBody3D"]
+script = ExtResource("1_script")
+projectile_scene = ExtResource("2_proj")
+attack_range = 10.0
+speed = 3.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_1")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_1")
+surface_material_override/0 = SubResource("StandardMaterial3D_Blue")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_desired_distance = 1.0
+target_desired_distance = 1.0

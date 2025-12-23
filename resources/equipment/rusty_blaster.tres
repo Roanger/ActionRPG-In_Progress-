@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Equipment" load_steps=2 format=3 uid="uid://itemblaster1"]
+
+[ext_resource type="Script" path="res://scripts/resources/equipment.gd" id="1_equip"]
+
+[resource]
+script = ExtResource("1_equip")
+slot = 9
+stats = {
+"output": 5,
+"cycle_rate": 0.2
+}
+level_requirement = 1
+id = "rusty_blaster"
+name = "Rusty Blaster"
+description = "An old, reliable pea shooter. Increases Output."
+rarity = 1
+max_stack = 1
+sell_value = 25
