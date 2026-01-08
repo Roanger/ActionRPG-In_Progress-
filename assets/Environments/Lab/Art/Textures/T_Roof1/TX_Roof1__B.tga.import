@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://brwfo1jrfg8eu"
+path.s3tc="res://.godot/imported/TX_Roof1__B.tga-21dd1b8da60dde8c9e73780c6f1a84be.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://assets/Environments/Lab/Art/Textures/T_Roof1/TX_Roof1__B.tga"
+dest_files=["res://.godot/imported/TX_Roof1__B.tga-21dd1b8da60dde8c9e73780c6f1a84be.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.5
+compress/hdr_compression=1
+compress/normal_map=2
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=0
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=8192
+detect_3d/compress_to=0

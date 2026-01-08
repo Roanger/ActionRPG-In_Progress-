@@ -55,7 +55,7 @@ func _physics_process(delta):
 	move_and_slide()
 
 # --- VIRTUAL METHODS (Override these!) ---
-func _process_ai(delta):
+func _process_ai(_delta):
 	pass
 
 func _perform_attack():

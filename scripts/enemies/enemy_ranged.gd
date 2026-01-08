@@ -3,7 +3,7 @@ extends EnemyBase
 @export var projectile_scene: PackedScene
 @export var flee_distance: float = 4.0
 
-func _process_ai(delta):
+func _process_ai(_delta):
 	var dist_to_player = global_position.distance_to(player.global_position)
 	
 	# Face player always

@@ -1,9 +1,8 @@
 [gd_scene load_steps=3 format=3 uid="uid://floor1234567"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_1"]
-size = Vector3(4, 0.1, 4)
+[ext_resource type="PackedScene" uid="uid://pfmfloor1" path="res://assets/Environments/Lab/Art/Prefabs/PF_Mfloor.prefab.scn" id="1_mesh"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_1"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_1"]
 size = Vector3(4, 0.1, 4)
 
 [node name="FloorTile" type="StaticBody3D"]
@@ -11,5 +10,5 @@ size = Vector3(4, 0.1, 4)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_1")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("BoxMesh_1")
+[node name="Model" parent="." instance=ExtResource("1_mesh")]
+transform = Transform3D(0.87, 0, 0, 0, 1, 0, 0, 0, 1.026, -2, 0, -2)

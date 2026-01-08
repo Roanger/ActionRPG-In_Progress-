@@ -37,7 +37,7 @@ func _ready():
 	
 	recalculate_stats()
 
-func _on_equipment_changed(equipment: Dictionary):
+func _on_equipment_changed(_equipment: Dictionary):
 	recalculate_stats()
 
 func recalculate_stats():
@@ -84,6 +84,10 @@ func die():
 	# Reload scene for now
 	get_tree().reload_current_scene()
 
+func _on_interact_area_entered(body):
+	if body.is_in_group("loot"):
+		body.pick_up(self)
+
 func _physics_process(delta):
 	# Add gravity
 	if not is_on_floor():
@@ -92,9 +96,9 @@ func _physics_process(delta):
 	# 1. Handle Movement
 	var input_dir = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
 	
-	var current_speed = SPEED
-	if current_class:
-		current_speed = current_class.movement_speed
+	var current_speed = speed_total # Changed to speed_total
+	# if current_class: # This block is now redundant due to speed_total
+	# 	current_speed = current_class.movement_speed
 
 	if input_dir:
 		# WASD Control (Overrides Navigation)
@@ -126,7 +130,7 @@ func check_wall_occlusion():
 	var space_state = get_world_3d().direct_space_state
 	var origin = camera.global_position
 	var target = global_position + Vector3(0, 1, 0)
-	var dist = origin.distance_to(target)
+	# var dist = origin.distance_to(target) # Unused
 	
 	# Create a Sphere Shape for the cast
 	var shape = SphereShape3D.new()

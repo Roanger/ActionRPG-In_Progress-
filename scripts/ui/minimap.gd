@@ -22,7 +22,7 @@ func _ready():
 	if players.size() > 0:
 		player = players[0]
 
-func _process(delta):
+func _process(_delta):
 	if player:
 		# Follow player X/Z
 		camera.global_position.x = player.global_position.x
